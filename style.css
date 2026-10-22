@@ -233,3 +233,32 @@ tbody td{color:#62778b}.good{color:var(--orange-600);font-weight:1000;background
   .floating-cta a:first-child{background:var(--blue-800)}.floating-cta a:last-child{background:var(--orange-500)}
   body{padding-bottom:54px}
 }
+
+/* ===== 2026-10 service detail update ===== */
+.visual-block{max-width:980px;margin:42px auto 0;padding:14px;background:#fff;border:1px solid #dcebf6;border-radius:24px;box-shadow:var(--shadow-sm)}
+.visual-block img{width:100%;height:auto;border-radius:14px}
+.visual-block-large{max-width:1040px}
+.visual-block-wide{max-width:1000px;margin-bottom:34px}
+.visual-explain{background:#fff}
+.four-steps{grid-template-columns:repeat(4,1fr)}
+.flow-message{max-width:980px;margin:34px auto 0;padding:24px 28px;border-radius:22px;background:linear-gradient(90deg,#edf9ff,#fff3e8);border:1px solid #d9ebf7;box-shadow:var(--shadow-sm);text-align:center}
+.flow-message strong{display:block;color:var(--blue-900);font-size:20px;margin-bottom:8px}
+.flow-message span{display:block;color:#65788c;font-weight:700}
+.compact-price-grid{margin-top:34px}
+.compare-points{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:980px;margin:30px auto 0}
+.compare-points>div{padding:22px;border-radius:20px;background:#fff;border:1px solid #dcebf6;box-shadow:var(--shadow-sm);text-align:center}
+.compare-points strong{display:block;color:var(--blue-900);font-size:18px;margin-bottom:6px}
+.compare-points span{display:block;color:#687c90;font-size:14px}
+.service-panel .five-min strong{font-size:30px;line-height:1.35}
+
+@media (max-width:980px){
+  .four-steps{grid-template-columns:repeat(2,1fr)}
+  .compare-points{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .visual-block{padding:6px;border-radius:16px;margin-top:26px}
+  .four-steps{grid-template-columns:1fr}
+  .flow-message{padding:20px 18px}
+  .flow-message strong{font-size:17px}
+  .service-panel .five-min strong{font-size:25px}
+}
