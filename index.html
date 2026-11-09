@@ -6,6 +6,100 @@
   <meta name="description" content="歯科医院・歯科技工所向け 石膏トラップ回収交換サービス。汚れた石膏トラップを回収し、洗浄・消毒済みのトラップへ交換。県外からのご相談・無料見積りも受付中。" />
   <title>石膏トラップ回収交換サービス｜株式会社SAGA</title>
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .service-illustration{
+      background:#fff;
+      border-radius:24px;
+      padding:18px;
+      box-shadow:0 18px 44px rgba(0,0,0,.12);
+      overflow:hidden;
+    }
+    .service-illustration img{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:14px;
+    }
+    @media (max-width: 820px){
+      .service-illustration{margin-top:8px;padding:12px;border-radius:18px;}
+    }
+  </style>
+
+
+  <style>
+    .service-top-layout{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:48px;
+      align-items:start;
+      margin-bottom:38px;
+    }
+    .service-point-block{
+      padding-top:34px;
+    }
+    .service-illustration-large{
+      width:100%;
+      max-width:880px;
+      margin:0 auto;
+      background:#fff;
+      border-radius:24px;
+      padding:20px;
+      box-shadow:0 18px 44px rgba(0,0,0,.12);
+      overflow:hidden;
+    }
+    .service-illustration-large img{
+      display:block;
+      width:100%;
+      height:auto;
+      margin:0 auto;
+    }
+    @media (max-width:820px){
+      .service-top-layout{
+        grid-template-columns:1fr;
+        gap:12px;
+        margin-bottom:28px;
+      }
+      .service-point-block{
+        padding-top:0;
+      }
+      .service-illustration-large{
+        padding:10px;
+        border-radius:18px;
+      }
+    }
+  </style>
+
+
+  <style>
+    /* 3つの説明画像の横幅を統一 */
+    .service-illustration-large,
+    .problem .visual-block,
+    .compare .visual-block-large{
+      width:100%;
+      max-width:880px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .problem .visual-block img,
+    .compare .visual-block-large img{
+      display:block;
+      width:100%;
+      height:auto;
+      margin:0 auto;
+    }
+  </style>
+
+
+  <style>
+    /* 本体買取割引の右上に出る「交換するだけ」ラベルを非表示 */
+    .price .service-panel::before{
+      display:none !important;
+      content:none !important;
+    }
+  </style>
+
 </head>
 <body>
   <header class="site-header">
@@ -61,33 +155,35 @@
     </section>
 
     <section id="service" class="service section section-blue">
-      <div class="container service-grid">
-        <div>
-          <p class="eyebrow light">SAGAの石膏トラップ回収交換サービス</p>
-          <h2>汚れたトラップを回収し、<br>洗浄済みのトラップへ交換。</h2>
-          <p class="section-lead light-text">このサービスは、医院様で石膏トラップを洗浄していただくサービスではありません。SAGAが使用中のトラップを回収し、その場で洗浄済みのトラップに交換します。</p>
-          <ul class="check-list light-text">
-            <li>洗浄済みの石膏トラップをお届け</li>
-            <li>使用中のトラップを現地で回収・交換</li>
-            <li>使用済みトラップはSAGAが持ち帰り</li>
-            <li>清掃倉庫で洗浄・消毒し、次回交換に備える</li>
-          </ul>
-          <div class="hero-actions" style="margin-top: 20px;">
-            <!-- href の # を実際の作業動画URLに変更してください -->
-            <a class="btn btn-white" href="https://youtu.be/W2USAukCxlY?si=ZUEzWc5NgLx51vx5" target="_blank" rel="noopener">作業動画を見る</a>
+      <div class="container">
+
+        <div class="service-top-layout">
+          <div class="service-copy-block">
+            <p class="eyebrow light">SAGAの石膏トラップ回収交換サービス</p>
+            <h2>汚れたトラップを回収し、<br>洗浄済みのトラップへ交換。</h2>
+            <p class="section-lead light-text">
+              このサービスは、医院様で石膏トラップを洗浄していただくサービスではありません。
+              SAGAが使用中のトラップを回収し、その場で洗浄済みのトラップに交換します。
+            </p>
+          </div>
+
+          <div class="service-point-block">
+            <ul class="check-list light-text">
+              <li>洗浄済みの石膏トラップをお届け</li>
+              <li>使用中のトラップを現地で回収・交換</li>
+              <li>使用済みトラップはSAGAが持ち帰り</li>
+              <li>清掃倉庫で洗浄・消毒し、次回交換に備える</li>
+            </ul>
+            <div class="hero-actions" style="margin-top: 20px;">
+              <a class="btn btn-white" href="https://youtu.be/W2USAukCxlY?si=ZUEzWc5NgLx51vx5" target="_blank" rel="noopener">作業動画を見る</a>
+            </div>
           </div>
         </div>
-        <div class="service-panel">
-          <div class="exchange-flow"><span>洗浄済みをお届け</span><b>→</b><span>現地で交換</span><b>→</b><span>使用済みを回収</span></div>
-          <div class="five-min"><span>医院様にしていただくこと</span><strong>交換をおまかせ</strong></div>
-          <p>面倒な「取り外す・石膏を出す・洗う・消毒する・戻す」という作業を減らせます。</p>
-        </div>
-      </div>
 
-      <div class="container" style="margin-top: 36px;">
-        <div class="visual-block visual-block-large">
+        <div class="service-illustration-large">
           <img src="assets/02_service.png" alt="石膏トラップ回収交換サービスの内容詳細" />
         </div>
+
       </div>
     </section>
 
